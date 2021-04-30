@@ -22,11 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/cheeseburger/device.mk)
 
 # Inherit some common arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/ssos/config/common.mk)
 
-DEVICE_MAINTAINER := Bauuuuu
+DEVICE_MAINTAINER := 135e2
 
-PRODUCT_NAME := arrow_cheeseburger
+PRODUCT_NAME := ssos_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
