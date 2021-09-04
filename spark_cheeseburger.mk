@@ -25,9 +25,9 @@ $(call inherit-product, device/oneplus/cheeseburger/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from Potato vendor
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
-PRODUCT_NAME := potato_cheeseburger
+PRODUCT_NAME := spark_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -42,9 +42,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus5 \
     PRODUCT_NAME=OnePlus5
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
+#PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus5-user 8.1.0 OPM1.171019.011 1 release-keys"
 
-BUILD_FINGERPRINT := OnePlus/OnePlus5/OnePlus5:8.1.0/OPM1.171019.011/04110400:user/release-keys
+#BUILD_FINGERPRINT := OnePlus/OnePlus5/OnePlus5:8.1.0/OPM1.171019.011/04110400:user/release-keys
 
 TARGET_VENDOR := oneplus
+WITH_GAPPS := true
+TARGET_USES_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
